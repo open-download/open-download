@@ -27,7 +27,7 @@ jobs:
               npm run build-mac-x86
                 
       - uses: AButler/upload-release-assets@v2.0
-          with:
-            files: 'bin/*'
-            repo-token: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: 'bin/*'
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
       
