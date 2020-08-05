@@ -14,18 +14,20 @@ jobs:
         node-version: [12.18.1]
 
     steps:
-          - uses: actions/checkout@v1.0.0
-          - name: Checkout code
-          - run: |
-                  npm i nexe
-                  npm ci
-                  npm run build-win-x64
-                  npm run build-mac-x64
-                  npm run build-win-x86
-                  npm run build-mac-x86
+      - name: Checkout code
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: |
+              npm i nexe
+              npm ci
+              npm run build-win-x64
+              npm run build-mac-x64
+              npm run build-win-x86
+              npm run build-mac-x86
                 
-          - uses: AButler/upload-release-assets@v2.0
-            with:
-              files: 'bin/*'
-              repo-token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: AButler/upload-release-assets@v2.0
+          with:
+            files: 'bin/*'
+            repo-token: ${{ secrets.GITHUB_TOKEN }}
       
