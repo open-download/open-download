@@ -17,7 +17,10 @@
   "name": "open-communicate",
   "scripts": {
     "start": "node index.js",
-    "build": "nexe -r src -n open-communicate -o bin/open-communicate"
+    "build-win-x64": "nexe -r src -n open-communicate -o bin/open-communicate -t win-x64",
+    "build-win-x86": "nexe -r src -n open-communicate -o bin/open-communicate -t win-x86",
+    "build-mac-x64": "nexe -r src -n open-communicate -o bin/open-communicate -t mac-x64",
+    "build-mac-x86": "nexe -r src -n open-communicate -o bin/open-communicate -t mac-x86"
   },
   "version": "1.0.0",
   "devDependencies": {
