@@ -12,12 +12,12 @@
     "prompts": "^2.3.2",
     "selfsigned": "^1.10.7"
   },
-  "license": "MPL",
+  "license": "MPL-2.0",
   "main": "index.js",
   "name": "open-communicate",
   "scripts": {
     "start": "node index.js",
-    "build-win-x64": "nexe -r src -n open-communicate -o bin/open-communicate-win-x64 -t win-x64",
+    "build-win-x64": "nexe -r src -n open-communicate -o bin/open-communicate-win-x64 -t winmn-x64",
     "build-win-x86": "nexe -r src -n open-communicate -o bin/open-communicate-win-x86 -t win-x86",
     "build-mac-x64": "nexe -r src -n open-communicate -o bin/open-communicate-mac-x64 -t mac-x64",
     "build-mac-x86": "nexe -r src -n open-communicate -o bin/open-communicate-mac-x86 -t mac-x86",
