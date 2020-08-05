@@ -20,7 +20,11 @@
     "build-win-x64": "nexe -r src -n open-communicate -o bin/open-communicate -t win-x64",
     "build-win-x86": "nexe -r src -n open-communicate -o bin/open-communicate -t win-x86",
     "build-mac-x64": "nexe -r src -n open-communicate -o bin/open-communicate -t mac-x64",
-    "build-mac-x86": "nexe -r src -n open-communicate -o bin/open-communicate -t mac-x86"
+    "build-mac-x86": "nexe -r src -n open-communicate -o bin/open-communicate -t mac-x86",
+    "build-linux-x64": "nexe -r src -n open-communicate -o bin/open-communicate -t linux-x64",
+    "build-linux-x86": "nexe -r src -n open-communicate -o bin/open-communicate -t linux-x86"
+
+
   },
   "version": "1.0.0",
   "devDependencies": {
