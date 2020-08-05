@@ -20,7 +20,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: |
+              ls
               cd ..
+              ls
               npm i nexe
               npm i
               npm run build-win-x64
