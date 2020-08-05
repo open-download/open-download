@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "download-file": "^0.1.5",
+    "ip": "^1.1.5",
+    "prettier": "^2.0.5",
+    "progress": "^2.0.3",
+    "selfsigned": "^1.10.7",
+    "socket.io": "^2.3.0"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "name": "open-communicate",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "version": "1.0.0",
+  "devDependencies": {
+    "chalk": "^4.1.0",
+    "downloads-folder": "^3.0.0",
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "express": "^4.17.1",
+    "mime-to-extensions": "^1.0.2",
+    "performance-stopwatch": "^2.2.1",
+    "prompts": "^2.3.2"
+  }
+}
