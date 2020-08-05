@@ -15,9 +15,6 @@ jobs:
 
     steps:
           - name: Checkout code
-            uses: actions/checkout@v2
-          - name: Create Release
-            id: create_release
           - run: |
                   npm i nexe
                   npm ci
