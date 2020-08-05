@@ -40,7 +40,6 @@ function destroy(crumb, callback) {
  */
 function chkCrumb(crumb, callback) {
   fs.stat(crumbDIR + "/" + crumb, function (err) {
-    console.log(err);
     callback(err === null);
   });
 }
