@@ -7,7 +7,7 @@
     "selfsigned": "^1.10.7",
     "socket.io": "^2.3.0"
   },
-  "license": "MIT",
+  "license": "MPL",
   "main": "index.js",
   "name": "open-communicate",
   "scripts": {
