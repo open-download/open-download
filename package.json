@@ -1,27 +1,28 @@
 {
   "dependencies": {
+    "chalk": "^4.1.0",
     "download-file": "^0.1.5",
+    "downloads-folder": "^3.0.0",
+    "express": "^4.17.1",
     "ip": "^1.1.5",
-    "prettier": "^2.0.5",
+    "mime-to-extensions": "^1.0.2",
+    "nexe": "^3.3.7",
+    "performance-stopwatch": "^2.2.1",
     "progress": "^2.0.3",
-    "selfsigned": "^1.10.7",
-    "socket.io": "^2.3.0"
+    "prompts": "^2.3.2",
+    "selfsigned": "^1.10.7"
   },
   "license": "MPL",
   "main": "index.js",
   "name": "open-communicate",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "nexe -r src -n open-communicate -o bin/open-communicate"
   },
   "version": "1.0.0",
   "devDependencies": {
-    "chalk": "^4.1.0",
-    "downloads-folder": "^3.0.0",
     "eslint": "^7.6.0",
     "eslint-config-google": "^0.14.0",
-    "express": "^4.17.1",
-    "mime-to-extensions": "^1.0.2",
-    "performance-stopwatch": "^2.2.1",
-    "prompts": "^2.3.2"
+    "prettier": "^2.0.5"
   }
 }

@@ -202,3 +202,4 @@ crt/
 crumb/
 yarn-error.log
 yarn.lock
+/bin/*
