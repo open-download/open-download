@@ -27,10 +27,9 @@ jobs:
               npm run build-win-x64
               npm run build-mac-x64
               npm run build-win-x86
-              npm run build-linux-x64
                 
       - uses: AButler/upload-release-assets@v2.0
         with:
-          files: 'bin/*;include/*'
+          files: 'bin/*'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
       

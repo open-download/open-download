@@ -1,10 +1,7 @@
-let home = require("os").homedir();
-let documents = home + '/Documents/';
-
-const crumbLocation = documents + "/crumb"
-const crtLocation = documents + "/crt"
+const crumbLocation = __dirname + "/crumb"
+const crtLocation = __dirname + "/crt"
 const downloadsFolder = require('downloads-folder')();
-console.log(crumbLocation)
+
 module.exports ={
     crumbLocation,
     crtLocation,

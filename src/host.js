@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 const random = (Math.random() * 100000).toFixed(0);
 const https = require("https");
-const crtLocation = require("../locations.js").crtLocation;
+const crtLocation = require("../locations").crtLocation;
 const fs = require("fs");
 
 function host(fileLocation, chkSum, cb) {
