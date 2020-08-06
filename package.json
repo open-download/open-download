@@ -1,13 +1,13 @@
 {
   "dependencies": {
     "chalk": "^4.1.0",
-    "download-file": "^0.1.5",
     "downloads-folder": "^3.0.0",
     "express": "^4.17.1",
     "ip": "^1.1.5",
     "mime-to-extensions": "^1.0.2",
     "nexe": "^3.3.7",
     "performance-stopwatch": "^2.2.1",
+    "pkg": "^4.4.9",
     "progress": "^2.0.3",
     "prompts": "^2.3.2",
     "selfsigned": "^1.10.7"
@@ -17,15 +17,15 @@
   "name": "open-communicate",
   "scripts": {
     "start": "node index.js",
-    "build-win-x64": "nexe -r src -n open-communicate -o bin/open-communicate-win-x64 -t win-x64",
-    "build-win-x86": "nexe -r src -n open-communicate -o bin/open-communicate-win-x86 -t win-x86",
-    "build-mac-x64": "nexe -r src -n open-communicate -o bin/open-communicate-mac-x64 -t mac-x64",
-    "build-mac-x86": "nexe -r src -n open-communicate -o bin/open-communicate-mac-x86 -t mac-x86",
-    "build-linux-x64": "nexe -r src -n open-communicate -o bin/open-communicate-linux-x64 -t linux-x64",
-    "build-linux-x86": "nexe -r src -n open-communicate -o bin/open-communicate-linux-x86 -t linux-x86"
-
-
+    "build-all": "pkg .",
+    "build-win-x64": "pkg . -t node12.18.1-win-x64 -o bin/open-communicate",
+    "build-win-x86": "pkg . -t node12.18.1-win-x86 -o bin/open-communicate",
+    "build-mac-x64": "pkg . -t node12.18.1-mac-x64 -o bin/open-communicate",
+    "build-mac-x86": "pkg . -t node12.18.1-win-x86 -o bin/open-communicate",
+    "build-linux-x64": "pkg . -t node12.18.1-linux-x64 -o bin/open-communicate",
+    "build-linux-x86": "pkg . -t node12.18.1-linux-x86 -o bin/open-communicate"
   },
+  "bin": "index.js",
   "version": "1.0.0",
   "devDependencies": {
     "eslint": "^7.6.0",

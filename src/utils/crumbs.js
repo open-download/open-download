@@ -1,6 +1,6 @@
 const fs = require("fs");
-const crumbDIR = require("../../locations").crumbLocation;
-const event = require("../utils/events");
+const crumbDIR = require("../../locations.js").crumbLocation;
+const event = require("../utils/events.js");
 
 fs.readdir(crumbDIR, function (error) {
   if (error !== null) {
@@ -20,6 +20,7 @@ fs.readdir(crumbDIR, function (error) {
  */
 function create(crumb, callback) {
   fs.writeFile(crumbDIR + "/" + crumb, "", callback);
+  console.log(crumbDIR + "/" + crumb)
 }
 
 /**

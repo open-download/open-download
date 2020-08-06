@@ -1,6 +1,6 @@
-const event = require("../utils/events");
+const event = require("../utils/events.js");
 const chalk = require("chalk");
-const certificate = require("../utils/certificate");
+const certificate = require("../utils/certificate.js");
 
 event.on("crumbDirCreated", function () {
   console.log(chalk.green("Crumb directory created"));

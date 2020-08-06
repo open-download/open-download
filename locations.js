@@ -1,5 +1,6 @@
-const crumbLocation = __dirname + "/crumb"
-const crtLocation = __dirname + "/crt"
+const path = require("path");
+const crumbLocation = path.dirname(process.execPath) + "/crumb"
+const crtLocation = path.dirname(process.execPath) + "/crt"
 const downloadsFolder = require('downloads-folder')();
 
 module.exports ={
