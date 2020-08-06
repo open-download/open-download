@@ -1,23 +1,15 @@
 const download = require("../src/download").download;
 const crumb = require("./utils/crumbs");
 const event = require("./utils/events");
-const prompts = require("prompts");
+const prompts = require("./prompts/prompt");
 const host = require("./host");
 const ip = require("ip");
 
+
 function askDownload() {
   (async () => {
-    let whatToDo = await prompts({
-      type: "select",
-      message: "what do you want to do?",
-      name: "value",
-      choices: [
-        { title: "exit", value: "exit" },
-        { title: "download and emit", value: "download" },
-        { title: "capture download", value: "capture" },
-      ],
-    });
-    whatToDo = whatToDo.value;
+    // what to do
+    let whatToDo = prompts.display("what to do");
 
     if (whatToDo === "exit") {
       process.exit(0);
@@ -56,6 +48,10 @@ function askDownload() {
 
               host.host(destination, chkSum, function (hostData) {
                 console.log("File code: " + hostData.random);
+
+
+
+
               });
             });
           }
